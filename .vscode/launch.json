@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open README.html",
+            "file": "c:\\Users\\marce\\Documents\\Analitica_Descriptiva\\PRE-02-programacion-en-python-mapreduce-jjzm0521\\Solucion_Final_Parcial\\Punto 3\\README.html"
+        }
+    ]
+}
