@@ -264,8 +264,8 @@ class FraunhoferDiffraction:
         slider_defs = {
             'lambda': {'label': 'λ (nm)', 'range': (400, 700), 'format': '%.0f'},
             'D': {'label': 'D (mm)', 'range': (0.5, 5), 'format': '%.2f'},
-            'a': {'label': 'a (mm)', 'range': (0.0, 2), 'format': '%.2f'},
-            'b': {'label': 'b (mm)', 'range': (0.0, 2), 'format': '%.2f'},
+            'a': {'label': 'a (mm)', 'range': (0, 2), 'format': '%.2f'},
+            'b': {'label': 'b (mm)', 'range': (0, 2), 'format': '%.2f'},
             'R1': {'label': 'R₁ (mm)', 'range': (0, 1), 'format': '%.2f'},
             'R2': {'label': 'R₂ (mm)', 'range': (0, 2), 'format': '%.2f'},
             'z': {'label': 'z (m)', 'range': (0.5, 3), 'format': '%.1f'},

@@ -207,8 +207,10 @@ class DiffractionSimulator:
         # 4. La intensidad es el módulo al cuadrado del campo complejo.
         intensidad = np.abs(campo_fft)**2
 
-        # 5. Normalizar la intensidad para que el máximo sea 1, facilitando la visualización.
-        return intensidad / np.max(intensidad), x_obs, y_obs
+        # 5. Mejorar la visualización usando escala logarítmica para resaltar máximos secundarios
+        intensidad_log = np.log1p(intensidad)  # log(1 + I) para evitar log(0)
+        intensidad_log /= np.max(intensidad_log)  # Normalizar a 1
+        return intensidad_log, x_obs, y_obs
 
     def setup_ui(self):
         """Configura todos los widgets de la interfaz gráfica (sliders, botones)."""
